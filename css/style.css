@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+li {
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit; /* Цвет ссылок наследуется от родителя */
+}
+
+body {
+	font-family: 'Inter', sans-serif; /* Название шрифта */
+	font-weight: 400; /* Начертание шрифта */
+	font-size: 14px; /* Размер шрифта */
+	line-height: 17px; /* Расстояние от базовой линии первой строки до базовой линии второй строки */
+	color: #131313; /* Цвет шрифта */
+}
+
+.container {
+	max-width: 1220px; /* Прибавляем 20px, так как, слева и справа добавлен padding 10px */
+	padding: 0 10px; /* Делаем отступы слева и справа, чтобы текст не прижимался к краям на мобильных устройствах */
+	margin: 0 auto;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /* Выравниваем меню с логотипом по горизонтальной линии */
+}
+
+.menu {
+	margin-right: 70px;
+}
+
+.menu__list {
+	display: flex; /* Ставим меню в одну строку */
+}
+
+.menu__item + .menu__item { /* Значание применяется только к следующему соседу элемента .menu__item - обращение ко всем, кроме первого */
+	padding-left: 10px;
+}
+
+.menu__link {
+	text-transform: uppercase; /* Изменяем тексту регистр на все заглавные */
+	padding: 43px 20px; /* Отступа справа и слева от ссылок */
+	transition: all 0.3s; /* Плавное включение :hover */
+}
+
+.menu__link:hover {
+	background-color: #131313;
+	color: #fff;
+}
+
+.bike {
+	padding: 100px 0 150px;
+}
+
+.bike__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bike__column-slider {
+	flex-basis: 630px; /* Это свойство задает ширину флекс-элементу по основной оси */
+	max-width: 630px; /* Добавляем свойство, чтобы JS (slider) не перебивал свойство flex-basis */
+	margin-left: 30px;
+}
+
+.bike__title {
+	font-weight: 700; /* h1 - и так имеет жирность 700, но мы ставим для уточнения, на случай, если тег h1, будет поменян на какой-то другой */
+	font-size: 64px;
+	line-height: 77px;
+	margin: 60px 0 5px; /* Верхний отступ - 60px, слева и справа - 0px, нижний отступ - 5px */
+}
+
+.bike__subtitle {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	color: #6f6f6f;
+	margin: 0 0 60px; /* Верхний отступ - 0px, слева и справа - 0px, нижний отступ - 60px */
+}
+
+.bike_text {
+	min-width: 420px;
+	margin-bottom: 20px;
+}
+
+.bike__link {
+	margin-top: 80px;
+	display: inline-block; /* Делает из строчных элементов - блочные. Можно задать ширину и высоту. Часто используется для кнопок */
+	background-color: #131313;
+	color: #fff;
+	padding: 28px 81px;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1.1em; /* Расстояние между буквами */
+}
+
+.bike-slider .slick-dots {
+	right: 0;
+	top: 50px;
+}
+
+.slick-dots {
+	position: absolute;
+}
+
+.slick-dots li + li {
+	padding-top: 10px;
+}
+
+.slick-dots button {
+	width: 2px;
+	height: 25px;
+	font-size: 0;
+	padding: 0;
+	border: none;
+	background-color: #131313;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+	background-color: #ff4040;
+}
+
+.bike__list {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.bike__list-item {
+	min-width: 160px;
+	min-height: 58px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.bike__list-num {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.bike__list-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	margin: auto 0;
+}
+
+ /*  */
