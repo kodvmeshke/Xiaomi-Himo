@@ -4,10 +4,9 @@
 	box-sizing: border-box;
 }
 
-html {
-	/* scroll-behavior: smooth; */
-	/* Плавная прокрутка к якорям по странице */
-}
+/* Для плавного перехода к ссылкам-якорям используется следующее свойство:
+html {scroll-behavior: smooth;}
+*/
 
 ul {
 	margin: 0;
